@@ -1,0 +1,13 @@
+<themeCapabilities>
+
+   <variant name="afterglow">
+      <label>Afterglow</label>
+      <selectable>true</selectable>
+   </variant>
+
+   <variant name="belafonteNight">
+      <label>Belafonte Night</label>
+      <selectable>true</selectable>
+   </variant>
+
+</themeCapabilities>

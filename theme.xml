@@ -1,0 +1,105 @@
+<!--
+theme name:    Terminal DE
+author:        Anthony Caccese
+license:       creative commons CC-BY-NC-SA
+-->
+
+<theme>
+
+   <variables>
+      <bodyFont>./_inc/fonts/UbuntuMono-Regular.ttf</bodyFont>
+      <spacerImage>./_inc/images/space.png</spacerImage>
+   </variables>
+
+   <variant name="afterglow">
+      <view name="system,gamelist">
+         <image name="background">
+            <color>212121</color>
+         </image>
+         <text name="bash-prompt">
+            <color>9CAA71</color>
+         </text>
+         <textlist name="directory-list">
+            <selectorColor>212121</selectorColor>
+            <selectedColor>F5C880</selectedColor>
+            <primaryColor>B8ADA5</primaryColor>
+            <secondaryColor>B8ADA5</secondaryColor>
+         </textlist>
+         <helpsystem name="help">
+            <textColor>A9A585</textColor>
+            <iconColor>A9A585</iconColor>
+         </helpsystem>
+      </view>
+   </variant>
+
+   <variant name="belafonteNight">
+      <view name="system,gamelist">
+         <image name="background">
+            <color>20111B</color>
+         </image>
+         <text name="bash-prompt">
+            <color>F6B261</color>
+         </text>
+         <textlist name="directory-list">
+            <selectorColor>20111B</selectorColor>
+            <selectedColor>F04C3A</selectedColor>
+            <primaryColor>B8ADA5</primaryColor>
+            <secondaryColor>B8ADA5</secondaryColor>
+         </textlist>
+         <helpsystem name="help">
+            <textColor>A9A585</textColor>
+            <iconColor>A9A585</iconColor>
+         </helpsystem>
+      </view>
+   </variant>
+
+   <view name="system,gamelist">
+      <image name="background">
+         <size>1 1</size>
+         <pos>0 0</pos>
+         <origin>0 0</origin>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <zIndex>0</zIndex>
+      </image>
+      <text name="bash-prompt">
+         <origin>0 0</origin>
+         <pos>0.04375 0.077777777777778</pos><!-- 56 56 -->
+         <size>0 0</size>
+         <text>ES-DE:~ $_</text>
+         <fontPath>${bodyFont}</fontPath>
+         <fontSize>0.025</fontSize><!-- 20 -->
+      </text>
+      <textlist name="directory-list">
+         <origin>0 0</origin>
+         <pos>0.04375 0.119444444444444</pos><!-- 56 86 -->
+         <size>0.9125 0.777777777777778</size><!-- 1168 560 -->
+         <horizontalAlignment>left</horizontalAlignment>
+         <fontSize>0.025</fontSize><!-- 20 -->
+         <lineSpacing>1.5</lineSpacing>
+         <fontPath>${bodyFont}</fontPath>
+         <horizontalMargin>0</horizontalMargin>
+         <zIndex>1</zIndex>
+      </textlist>
+      <helpsystem name="help">
+         <pos>0.04375 0.911111111111111</pos><!-- 56 656 -->
+         <fontPath>${bodyFont}</fontPath>
+         <fontSize>0.025</fontSize>
+      </helpsystem>
+   </view>
+
+   <view name="gamelist">
+      <text name="bash-prompt">
+         <text>ES-DE:${system.fullName} $_</text>
+      </text>
+      <video name="video">
+         <origin>1 0</origin>
+         <pos>0.95625 0.077777777777778</pos>
+         <maxSize>0.35 0.65</maxSize>
+         <imageType>cover,screenshot,titlescreen,fanart</imageType>
+         <pillarboxes>false</pillarboxes>
+         <zIndex>2</zIndex>
+      </video>
+   </view>
+
+</theme>
