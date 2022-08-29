@@ -1,4 +1,4 @@
-# terminal-DE (for ES-DE)
+# Terminal (for ES-DE)
 
 ## Details
 
