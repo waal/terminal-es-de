@@ -97,6 +97,7 @@ license:       creative commons CC-BY-NC-SA
          <origin>1 0</origin>
          <pos>0.95625 0.077777777777778</pos>
          <maxSize>0.35 0.65</maxSize>
+         <delay>3</delay>
          <imageType>cover,screenshot,titlescreen,fanart</imageType>
          <pillarboxes>false</pillarboxes>
          <zIndex>2</zIndex>
